@@ -1,0 +1,16 @@
+[build-system]
+requires = ['setuptools>=68']
+build-backend = 'setuptools.build_meta'
+
+[project]
+name = 'warehouse-gen'
+version = '0.1.0'
+description = 'Procedural warehouse scenes as labelled USD for robotics simulation'
+requires-python = '>=3.10'
+dependencies = []
+
+[project.optional-dependencies]
+dev = ['pytest']
+
+[project.scripts]
+warehouse-gen = 'warehouse_gen.cli:main'
